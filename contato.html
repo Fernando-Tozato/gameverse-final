@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Entre em contato com a equipe fictícia do portal GameVerse.">
+    <title>Contato | GameVerse</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" aria-label="GameVerse - página inicial">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-controller"></i></span>
+            <span>GAME<span class="brand-accent">VERSE</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+            <i class="bi bi-list fs-3" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <header class="page-hero">
+        <div class="container">
+          <nav aria-label="Navegação estrutural">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contato</li>
+            </ol>
+          </nav>
+          <span class="page-kicker">Canal aberto</span>
+          <h1 class="page-title">Vamos continuar essa <span class="text-cyan">conversa.</span></h1>
+          <p class="page-lead">Envie uma sugestão, uma dúvida ou conte qual jogo não sai da sua cabeça.</p>
+        </div>
+      </header>
+
+      <section class="section-dark section-space" aria-labelledby="titulo-formulario">
+        <div class="container">
+          <div class="contact-layout">
+            <form class="contact-form" data-contact-form>
+              <div class="mb-4">
+                <span class="section-kicker">Sua mensagem</span>
+                <h2 class="section-title fs-2" id="titulo-formulario">Fale com o GameVerse</h2>
+                <p class="form-note mt-2 mb-0">Os campos marcados com * são obrigatórios.</p>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="nome">Nome completo *</label>
+                  <input class="form-control" type="text" id="nome" name="nome" autocomplete="name" minlength="3" maxlength="80" placeholder="Como podemos chamar você?" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">E-mail *</label>
+                  <input class="form-control" type="email" id="email" name="email" autocomplete="email" maxlength="120" placeholder="voce@exemplo.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="assunto">Assunto *</label>
+                  <select class="form-select" id="assunto" name="assunto" required>
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="sugestao">Sugestão de pauta</option>
+                    <option value="duvida">Dúvida sobre o portal</option>
+                    <option value="correcao">Correção de conteúdo</option>
+                    <option value="outro">Outro assunto</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <fieldset>
+                    <legend class="form-label mb-2">Editorias de interesse</legend>
+                    <div class="d-flex flex-wrap gap-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="editorias" value="lancamentos" id="lancamentos">
+                        <label class="form-check-label" for="lancamentos">Lançamentos</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="editorias" value="indie" id="indie">
+                        <label class="form-check-label" for="indie">Cenário indie</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="editorias" value="competitivo" id="competitivo">
+                        <label class="form-check-label" for="competitivo">Competitivo</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="mensagem">Mensagem *</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" minlength="20" maxlength="800" placeholder="Escreva sua mensagem com pelo menos 20 caracteres." required></textarea>
+                  <p class="form-note mt-2 mb-0">Limite de 800 caracteres.</p>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="aceite" id="aceite" required>
+                    <label class="form-check-label" for="aceite">Confirmo que li as informações e autorizo o contato por e-mail. *</label>
+                  </div>
+                </div>
+                <div class="col-12 pt-2">
+                  <button class="btn btn-primary" type="submit">Enviar mensagem <i class="bi bi-send ms-1" aria-hidden="true"></i></button>
+                </div>
+              </div>
+
+              <div class="form-success" data-form-success role="status" tabindex="-1">
+                <strong>Mensagem registrada.</strong> Esta é uma demonstração: nenhum dado foi enviado.
+              </div>
+            </form>
+
+            <aside class="contact-aside" aria-labelledby="titulo-atendimento">
+              <span class="section-kicker">Nossa equipe</span>
+              <h2 id="titulo-atendimento">A redação está por perto</h2>
+              <p>Escolha o canal mais adequado. Normalmente, respondemos às mensagens em até dois dias úteis.</p>
+
+              <ul class="contact-list">
+                <li>
+                  <i class="bi bi-envelope" aria-hidden="true"></i>
+                  <div>
+                    <strong>Contato geral</strong>
+                    <a href="mailto:ola@gameverse.exemplo">ola@gameverse.exemplo</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-newspaper" aria-hidden="true"></i>
+                  <div>
+                    <strong>Sugestões de pauta</strong>
+                    <span>Notícias, jogos e histórias da comunidade</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-clock" aria-hidden="true"></i>
+                  <div>
+                    <strong>Atendimento</strong>
+                    <span>Segunda a sexta, das 9h às 18h</span>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <a class="navbar-brand" href="index.html">
+              <span class="brand-mark" aria-hidden="true"><i class="bi bi-controller"></i></span>
+              <span>GAME<span class="brand-accent">VERSE</span></span>
+            </a>
+            <p class="footer-brand-copy">Um portal fictício feito para quem gosta de descobrir novos jogos, acompanhar novidades e compartilhar boas histórias.</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h2 class="footer-title">Navegue</h2>
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="noticias.html">Notícias</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h2 class="footer-title">Editorias</h2>
+            <ul class="footer-links">
+              <li><a href="noticias.html">Lançamentos</a></li>
+              <li><a href="noticias.html">Análises</a></li>
+              <li><a href="noticias.html">Cenário indie</a></li>
+              <li><a href="noticias.html">Competitivo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> GameVerse. Conteúdo fictício para fins educacionais.</span>
+          <span>Feito com HTML, CSS, Bootstrap e JavaScript.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="Voltar ao topo" title="Voltar ao topo">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

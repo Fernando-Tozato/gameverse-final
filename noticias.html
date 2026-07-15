@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Acompanhe as notícias fictícias, lançamentos, análises e campeonatos do GameVerse.">
+    <title>Notícias | GameVerse</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" aria-label="GameVerse - página inicial">
+            <span class="brand-mark" aria-hidden="true"><i class="bi bi-controller"></i></span>
+            <span>GAME<span class="brand-accent">VERSE</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+            <i class="bi bi-list fs-3" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">Notícias</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+              <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <header class="page-hero">
+        <div class="container">
+          <nav aria-label="Navegação estrutural">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Notícias</li>
+            </ol>
+          </nav>
+          <span class="page-kicker">Plantão da redação</span>
+          <h1 class="page-title">Notícias para ficar <span class="text-cyan">no jogo.</span></h1>
+          <p class="page-lead">Lançamentos, bastidores, campeonatos e as conversas que movimentam os videogames.</p>
+        </div>
+      </header>
+
+      <section class="section-dark section-space" aria-labelledby="manchete-principal">
+        <div class="container">
+          <article class="featured-story">
+            <div class="featured-story-media">
+              <img src="assets/img/esquadrao-nexo.webp" width="1586" height="992" alt="Três competidores conversam antes de uma partida em arena futurista">
+            </div>
+            <div class="featured-story-content">
+              <div class="news-meta"><span>Competitivo</span> · <time datetime="2026-07-15">15 de julho de 2026</time></div>
+              <h2 class="featured-story-title" id="manchete-principal">Liga Nexo reúne as melhores equipes do país em final presencial</h2>
+              <p>A fase decisiva terá três dias de partidas, atividades para o público e uma premiação inédita no circuito.</p>
+              <div class="mt-2">
+                <a class="btn btn-primary" href="#ultimas-noticias">Ler destaques <i class="bi bi-arrow-down ms-1" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-light section-space" id="ultimas-noticias" aria-labelledby="titulo-ultimas">
+        <div class="container">
+          <div class="d-flex flex-column flex-xl-row justify-content-between align-items-xl-end gap-4 mb-5">
+            <div>
+              <span class="section-kicker">Agora no GameVerse</span>
+              <h2 class="section-title" id="titulo-ultimas">Últimas notícias</h2>
+            </div>
+            <div class="content-filter" data-filter-group="noticias" aria-label="Filtrar notícias por categoria">
+              <button class="btn btn-filter active" type="button" data-filter="todos" aria-pressed="true">Todas</button>
+              <button class="btn btn-filter" type="button" data-filter="lancamentos" aria-pressed="false">Lançamentos</button>
+              <button class="btn btn-filter" type="button" data-filter="indie" aria-pressed="false">Indie</button>
+              <button class="btn btn-filter" type="button" data-filter="competitivo" aria-pressed="false">Competitivo</button>
+            </div>
+          </div>
+
+          <div class="news-layout">
+            <div class="news-grid" aria-live="polite">
+              <article class="news-card news-card-light filter-item" data-filter-item="lancamentos">
+                <div class="card-media">
+                  <img src="assets/img/ecos-de-aurea.webp" width="1586" height="992" loading="lazy" alt="Exploradora diante de grandes ruínas circulares na floresta">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Lançamentos</span><time datetime="2026-07-15">15 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Ecos de Áurea ganha data de lançamento e demonstração</h3>
+                  <p class="card-text-custom">A aventura chega em setembro com exploração cooperativa para duas pessoas.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+
+              <article class="news-card news-card-light filter-item" data-filter-item="competitivo">
+                <div class="card-media">
+                  <img src="assets/img/esquadrao-nexo.webp" width="1586" height="992" loading="lazy" alt="Equipe com uniformes coloridos reunida em uma arena de competição">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Competitivo</span><time datetime="2026-07-14">14 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Esquadrão Horizonte fecha a fase regular sem derrotas</h3>
+                  <p class="card-text-custom">A equipe garantiu a liderança com uma estratégia marcada por muita comunicação.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+
+              <article class="news-card news-card-light filter-item" data-filter-item="lancamentos">
+                <div class="card-media">
+                  <img src="assets/img/corrida-orbita.webp" width="1586" height="992" loading="lazy" alt="Duas naves de corrida fazem uma curva à beira do oceano">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Lançamentos</span><time datetime="2026-07-12">12 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Circuito Orbital acelera em nova temporada tropical</h3>
+                  <p class="card-text-custom">Quatro pistas costeiras e um novo modo de equipes chegam na próxima semana.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+
+              <article class="news-card news-card-light filter-item" data-filter-item="indie">
+                <div class="card-media">
+                  <img src="assets/img/colonia-vermelha.webp" width="1586" height="992" loading="lazy" alt="Pequena comunidade espacial cuida de hortas em um planeta vermelho">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Indie</span><time datetime="2026-07-09">9 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Colônia Vermelha celebra um milhão de jogadores</h3>
+                  <p class="card-text-custom">O simulador de comunidade ganhou construções, plantações e veículos gratuitos.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+
+              <article class="news-card news-card-light filter-item" data-filter-item="indie">
+                <div class="card-media">
+                  <img src="assets/img/ecos-de-aurea.webp" width="1586" height="992" loading="lazy" alt="Templo coberto por vegetação com luzes azuis e cachoeiras">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Indie</span><time datetime="2026-07-07">7 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Festival independente terá mais de 40 jogos brasileiros</h3>
+                  <p class="card-text-custom">O evento digital reúne demonstrações, entrevistas e painéis com criadores.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+
+              <article class="news-card news-card-light filter-item" data-filter-item="competitivo">
+                <div class="card-media">
+                  <img src="assets/img/corrida-orbita.webp" width="1586" height="992" loading="lazy" alt="Veículo vermelho lidera uma corrida futurista em alta velocidade">
+                </div>
+                <div class="card-body-custom">
+                  <div class="news-meta"><span>Competitivo</span><time datetime="2026-07-05">5 jul. 2026</time></div>
+                  <h3 class="card-title-custom">Copa Orbital define os doze pilotos da fase final</h3>
+                  <p class="card-text-custom">A classificação foi decidida por apenas dois pontos na última volta da etapa.</p>
+                  <a class="card-link" href="galeria.html">Ver imagens <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <aside class="news-sidebar" aria-label="Conteúdo complementar">
+              <section class="sidebar-block" aria-labelledby="titulo-mais-lidas">
+                <h2 class="sidebar-title" id="titulo-mais-lidas">Mais lidas</h2>
+                <ol class="popular-list">
+                  <li><span class="popular-rank">1</span><a href="#ultimas-noticias">Os jogos independentes que surpreenderam a redação</a></li>
+                  <li><span class="popular-rank">2</span><a href="#ultimas-noticias">Cinco pistas para dominar em Circuito Orbital</a></li>
+                  <li><span class="popular-rank">3</span><a href="#ultimas-noticias">Como funciona a exploração em Ecos de Áurea</a></li>
+                  <li><span class="popular-rank">4</span><a href="#ultimas-noticias">A estratégia por trás do Esquadrão Horizonte</a></li>
+                </ol>
+              </section>
+
+              <section class="sidebar-block" aria-labelledby="titulo-agenda">
+                <h2 class="sidebar-title" id="titulo-agenda">Agenda da semana</h2>
+                <div class="table-responsive">
+                  <table class="table schedule-table">
+                    <caption class="visually-hidden">Próximos eventos de jogos da semana</caption>
+                    <thead>
+                      <tr><th scope="col">Data</th><th scope="col">Evento</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>17 jul.</td><td>Direto Indie</td></tr>
+                      <tr><td>19 jul.</td><td>Copa Orbital</td></tr>
+                      <tr><td>21 jul.</td><td>Liga Nexo</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <a class="navbar-brand" href="index.html">
+              <span class="brand-mark" aria-hidden="true"><i class="bi bi-controller"></i></span>
+              <span>GAME<span class="brand-accent">VERSE</span></span>
+            </a>
+            <p class="footer-brand-copy">Um portal fictício feito para quem gosta de descobrir novos jogos, acompanhar novidades e compartilhar boas histórias.</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h2 class="footer-title">Navegue</h2>
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="noticias.html">Notícias</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h2 class="footer-title">Editorias</h2>
+            <ul class="footer-links">
+              <li><a href="noticias.html">Lançamentos</a></li>
+              <li><a href="noticias.html">Análises</a></li>
+              <li><a href="noticias.html">Cenário indie</a></li>
+              <li><a href="noticias.html">Competitivo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-current-year>2026</span> GameVerse. Conteúdo fictício para fins educacionais.</span>
+          <span>Feito com HTML, CSS, Bootstrap e JavaScript.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" data-back-to-top aria-label="Voltar ao topo" title="Voltar ao topo">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
