@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background-color: #0b1116;
+  color: #eaf2f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.logo {
+  margin: 0 0 16px;
+  color: #27d3cf;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+nav {
+  padding: 8px;
+  background-color: #111a21;
+  border-bottom: 3px solid #27d3cf;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.atual {
+  background-color: #27d3cf;
+  color: #081012;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 32px;
+  color: #f7c851;
+  font-size: 1.5rem;
+}
+
+p,
+li {
+  color: #c3d0d5;
+}
+
+section {
+  margin-bottom: 48px;
+  padding: 24px;
+  border-left: 4px solid #27d3cf;
+  background-color: #111a21;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+a {
+  color: #52e6e1;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: #f7c851;
+}
+
+.introducao {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 1.25rem;
+}
+
+.atalhos {
+  margin-bottom: 32px;
+  padding: 16px 24px;
+  background-color: #17242b;
+}
+
+.atalhos a {
+  margin-right: 16px;
+}
+
+.grupo-acoes {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.grupo-acoes a {
+  min-width: 80px;
+  padding: 8px 16px;
+  background-color: #27d3cf;
+  color: #081012;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grupo-acoes a:hover {
+  background-color: #f7c851;
+  color: #081012;
+}
+
+.destaque {
+  color: #ff7168;
+  font-weight: bold;
+}
+
+.legenda {
+  margin-top: 8px;
+  color: #95a7ae;
+  font-size: 0.875rem;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  border-top: 1px solid #33434b;
+  font-size: 0.875rem;
+}
