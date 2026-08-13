@@ -42,6 +42,14 @@ aulas/
 │   └── assets/
 │       ├── css/style.css
 │       └── img/
+├── aula-06/
+│   ├── index.html
+│   ├── noticias.html
+│   ├── galeria.html
+│   ├── contato.html
+│   └── assets/
+│       ├── css/style.css
+│       └── img/
 └── README.md
 ```
 
@@ -50,6 +58,7 @@ aulas/
 - **`aula-03/`**: cria as páginas do portal e apresenta links, navegação, âncoras internas e o estado `hover`, sem Flexbox, Grid ou Bootstrap.
 - **`aula-04/`**: retoma a versão da aula anterior para revisar HTML, CSS, links e navegação antes da introdução a Git, GitHub e commits. Como o encontro não acrescenta recursos ao portal, seu código permanece igual ao da aula 3.
 - **`aula-05/`**: padroniza os espaçamentos, aplica uma escala visual, troca tamanhos de fonte para `rem`, combina `%` com `max-width` e apresenta `gap` em um pequeno grupo de ações.
+- **`aula-06/`**: apresenta Flexbox pela relação entre elemento pai e filhos diretos, organiza o menu em uma linha e transforma os jogos em cards lado a lado com conteúdo vertical.
 
 ## Objetivo pedagógico
 
@@ -69,8 +78,9 @@ O material foi organizado para que:
 | 3 | Links e navegação | Menu, links entre páginas, âncoras internas e `hover` |
 | 4 | Revisão do módulo e introdução ao Git | Revisão de HTML e CSS, correção de erros comuns, Git, GitHub, commits e primeira publicação |
 | 5 | Espaçamentos e unidades de medida | `margin`, `padding`, `gap`, dimensões, medidas absolutas e relativas |
+| 6 | Organizando layouts com Flexbox | Flex container e flex items, `flex-direction`, `justify-content`, `align-items` e `gap` |
 
-Novas aulas devem ser adicionadas em pastas com o mesmo padrão de nomes, como `aula-06/` e `aula-07/`. Cada nova versão deve preservar o que já foi aprendido e acrescentar somente o conteúdo previsto para aquele encontro.
+Novas aulas devem ser adicionadas em pastas com o mesmo padrão de nomes, como `aula-07/` e `aula-08/`. Cada nova versão deve preservar o que já foi aprendido e acrescentar somente o conteúdo previsto para aquele encontro.
 
 ## Orientações para o professor
 
@@ -82,6 +92,7 @@ Novas aulas devem ser adicionadas em pastas com o mesmo padrão de nomes, como `
 - Compare a versão da aula com o projeto final para mostrar onde a sequência chegará, sem antecipar a implementação dos recursos futuros.
 - Na aula 4, use a repetição intencional da versão anterior para revisar o código, demonstrar a correção de erros e explicar que um commit registra uma etapa importante da evolução do projeto.
 - Na aula 5, compare o CSS com a versão anterior para destacar a escala de espaçamento e as unidades. Apresente `inline-flex` somente como o contexto necessário para demonstrar `gap`; o layout com Flexbox será estudado na aula seguinte.
+- Na aula 6, comece pelo menu para reforçar que o `display: flex` é aplicado ao elemento pai. Depois compare `row` e `column`, teste diferentes valores de `justify-content` ao vivo e use os cards para distinguir o eixo principal do eixo transversal.
 - Ao preparar a próxima aula, copie a versão anterior e faça apenas as mudanças relacionadas ao novo tema.
 
 ## Como abrir uma versão
