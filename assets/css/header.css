@@ -1,0 +1,35 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    background-color: #222;
+    height: 100px;
+    width: 100vw;
+}
+
+nav {
+    height: 100%;
+}
+
+ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    background-color: aqua;
+    padding: 8px 16px;
+}
