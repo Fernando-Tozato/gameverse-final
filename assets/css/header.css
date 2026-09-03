@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    background-color: #222;
 }
 
 header {
@@ -23,6 +24,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    flex-basis: 300px;
 }
 
 li {
@@ -30,6 +32,34 @@ li {
 }
 
 a {
-    background-color: aqua;
+
+    background-color: transparent;
+    color: white;
     padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.active { 
+    background-color: aqua;
+    color: black
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 8px;
+    color: white;
+    border: 3px solid cyan;
+    overflow: hidden;
+    background-color: #444;
+    text-align: center;
 }

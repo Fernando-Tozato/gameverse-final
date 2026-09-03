@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | GameVerse</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body id="top">
+    <header>
+      <p class="logo">GameVerse</p>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a class="atual" href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contato</h1>
+      <p class="introducao">Quer conversar sobre videogames? Envie uma mensagem para a equipe do GameVerse.</p>
+
+      <p class="atalhos">
+        Ir para:
+        <a href="#formulario">Formulário</a>
+        <a href="#canais">Canais de contato</a>
+      </p>
+
+      <section id="formulario">
+        <h2>Fale com a gente</h2>
+        <p>Preencha os campos abaixo para enviar sua dúvida, sugestão ou feedback.</p>
+        <p><span class="destaque">Atenção:</span> este formulário é demonstrativo e ainda não envia informações.</p>
+
+        <form>
+          <div class="campo-formulario">
+            <label for="nome" >Seu nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"> 
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+          </div>
+
+          <div class="campo-formulario">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione uma opção</option>
+              <option value="sugestao">Sugestão de jogo</option>
+              <option value="duvida">Dúvida</option>
+              <option value="feedback">Feedback</option>
+              <option value="parceria">Parceria</option>
+            </select>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+          </div>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+      <section id="canais">
+        <h2>Outros canais</h2>
+        <p><span class="destaque">E-mail:</span> <a href="mailto:contato@gameverse.exemplo">contato@gameverse.exemplo</a></p>
+        <p>Este projeto é fictício e o endereço de e-mail é usado apenas como exemplo em aula.</p>
+        <a href="index.html">Voltar para a Home</a>
+      </section>
+
+      <a class="voltar" href="#top">Voltar ao início da página</a>
+    </main>
+
+    <footer>
+      <p>GameVerse — projeto desenvolvido durante as aulas de Front-End.</p>
+    </footer>
+  </body>
+</html>
