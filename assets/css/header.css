@@ -63,3 +63,91 @@ a {
     background-color: #444;
     text-align: center;
 }
+
+section {
+  margin: 8px;
+  padding: 24px;
+  border-left: 4px solid #27d3cf;
+  background-color: #111a21;
+  color: white;
+}
+
+#dividido {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#img img {
+    width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 640px;
+  margin-top: 24px;
+}
+
+.linha-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.termo-formulario {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+
+.termo-formulario input {
+  margin: 0;
+  width: 16px;
+}
+
+label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #33434b;
+  border-radius: 4px;
+  background-color: #0b1116;
+  color: #eaf2f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 160px;
+}
+
+button {
+  align-self: flex-start;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #27d3cf;
+  color: #081012;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f7c851;
+}
