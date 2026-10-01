@@ -74,6 +74,14 @@ aulas/
 │   └── assets/
 │       ├── css/style.css
 │       └── img/
+├── aula-13/
+│   ├── index.html
+│   ├── noticias.html
+│   ├── galeria.html
+│   ├── contato.html
+│   └── assets/
+│       ├── css/style.css
+│       └── img/
 └── README.md
 ```
 
@@ -86,6 +94,7 @@ aulas/
 - **`aula-07/`**: permite que os cards quebrem para novas linhas e controla seu tamanho inicial, crescimento e redução conforme o espaço disponível.
 - **`aula-08/`**: transforma a página de contato em um formulário, relaciona rótulos e campos e usa Flexbox para organizar os controles em uma coluna.
 - **`aula-09/`**: apresenta CSS Grid em uma galeria com linhas e colunas, organiza nome e e-mail lado a lado e reforça os campos obrigatórios do formulário.
+- **`aula-13/`**: torna o portal responsivo com imagens fluidas, menu reorganizado, cards e galeria em uma coluna, formulário adaptado e Media Queries para telas menores.
 
 ## Objetivo pedagógico
 
@@ -109,6 +118,7 @@ O material foi organizado para que:
 | 7 | Flexbox: controlando o espaço | `flex-wrap`, `flex-basis`, `flex-grow` e `flex-shrink` |
 | 8 | Criando formulários | `form`, `label`, tipos de `input`, `textarea`, `select`, `option` e `button` |
 | 9 | Organizando layouts com CSS Grid | `display: grid`, `grid-template-columns`, unidade `fr`, função `repeat()` e `gap` |
+| 13 | Tornando o site responsivo | viewport, imagens fluidas, `max-width`, `flex-wrap`, Media Queries e adaptação de Flexbox e Grid |
 
 Novas aulas devem ser adicionadas em pastas com o mesmo padrão de nomes, como `aula-10/` e `aula-11/`. Cada nova versão deve preservar o que já foi aprendido e acrescentar somente o conteúdo previsto para aquele encontro.
 
@@ -126,6 +136,7 @@ Novas aulas devem ser adicionadas em pastas com o mesmo padrão de nomes, como `
 - Na aula 7, aumente a quantidade de cards antes de aplicar `flex-wrap` para tornar visível a falta de espaço. Em seguida, apresente `flex-basis`, `flex-grow` e `flex-shrink` separadamente e redimensione a janela após cada mudança.
 - Na aula 8, associe cada `label` ao campo correspondente antes de estilizar o formulário. Compare `input`, `select` e `textarea`, destaque que o `placeholder` não substitui o rótulo e retome Flexbox para organizar os campos em uma coluna.
 - Na aula 9, revise e corrija o formulário antes de apresentar Grid. Compare a galeria em uma, duas e três colunas, explique `fr` e `repeat()` e mostre que Grid e Flexbox continuam sendo usados juntos no projeto.
+- Na aula 13, comece reduzindo a janela para que a turma encontre problemas antes de mostrar o código. Depois, use o CSS da versão para destacar imagens fluidas, o menu vertical, os cards e a galeria em uma coluna e o formulário reorganizado pelas Media Queries de 768px e 480px. Teste cada ajuste sem usar `overflow-x: hidden` para mascarar problemas.
 - Ao preparar a próxima aula, copie a versão anterior e faça apenas as mudanças relacionadas ao novo tema.
 
 ## Como abrir uma versão
