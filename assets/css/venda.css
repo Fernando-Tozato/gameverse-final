@@ -1,0 +1,29 @@
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+    margin: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #777;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 16px rgba(184, 0, 0, 0.35);
+}
+
+.card-img {
+    width: 300px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8px;
+}
